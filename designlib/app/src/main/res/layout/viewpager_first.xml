@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+    <!-- design库里面的控件引用了V7包的主题,必须指定V7的主题主题,不然会崩溃 -->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinputlayout"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号:" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatbutton"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:theme="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
