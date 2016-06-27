@@ -94,5 +94,17 @@ public class BezierView extends View {
         path.cubicTo(mCtrlPt[12],mCtrlPt[13],mCtrlPt[14],mCtrlPt[15],mDataPt[0],mDataPt[1] - 120);
         canvas.drawPath(path,paint);
 
+
+        Paint textPaint = new Paint();
+        textPaint.setTextSize(60);
+        textPaint.setColor(Color.RED);
+        canvas.scale(1,-1);
+        canvas.drawText("哈", -140, -50, textPaint);
+        canvas.drawText("哈", -140, 10,textPaint);
+        canvas.drawText("哈", -140, 70,textPaint);
+        canvas.drawText("哈", 80, -50, textPaint);
+        canvas.drawText("哈", 80, 70,textPaint);
+
+//        drawTextOnPath(String text, Path path, float hOffset, float vOffset, Paint paint)
     }
 }
